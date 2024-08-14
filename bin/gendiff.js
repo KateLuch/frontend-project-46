@@ -5,11 +5,8 @@ program
   .name('gendiff')
   .description('Compares two configuration files and shows a difference.')
   .version('1.0.0');
-
-  program.command('')
-  .argument('<filepath1>')
-  .argument('<filepath2>')
+  .argument('<filepath1>', 'file 1')
+  .argument('<filepath2>', 'file 2')
   .option('-f, --format [type]', 'output format');
     
-
 program.parse(process.argv);
